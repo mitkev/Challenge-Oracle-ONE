@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="css/reset.css">
+        <script src="https://code.iconify.design/iconify-icon/1.0.2/iconify-icon.min.js"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/style.css">
+        <script type="text/javascript" src="script/script.js"></script>
+        <title>Ecriptador</title>
+    </head>
+    <body>
+        <header>
+            <img class="logo" src="img/logo.png"/>
+            <h1 class="titulo">Encriptador de Textos</h1>    
+        </header>
+
+        <main>
+            <div class="izquierda">
+                <textarea id="text-area" class="text-area" placeholder="Ingrese el texto aqui"></textarea>
+                <p class="informacion"><iconify-icon icon="bi:exclamation-circle-fill"></iconify-icon> Solo letras minusculas y sin acento</p>
+                <div class="botones">
+                    <button class="btn-encriptar" onclick="encriptar()"><p class="btn-text-encriptar">Encriptar</p></button>
+                    <button class="btn-desencriptar" onclick="desencriptar()"><p class="btn-text-desencriptar">Desencriptar</p></button>
+                </div>
+            </div>
+            <div id="derecha" class="derecha">
+                <div class="alerta">
+                    <p id="alerta-txt" class="alerta-txt">Ningun mensaje fue encontrado</p>
+                    <textarea id="text-area-encriptado" class="text-area-encriptado" placeholder="Ingresa el texto que desees encriptar o desencriptar"></textarea>
+                    <button id="btn-copiar" class="btn-copiar" onclick="copiar()"><p class="btn-txt-copiar">Copiar</p></button>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <p class="copyrigth">&copy; Kevin Chuquilin <iconify-icon icon="cib:oracle-netsuite"></iconify-icon></p>
+            <a><iconify-icon icon="typcn:social-instagram-circular"></iconify-icon></a>
+            <a><iconify-icon icon="jam:linkedin-circle"></iconify-icon></a>
+            <a><iconify-icon icon="jam:facebook-circle"></iconify-icon>
+        </footer>       
+    </body>
